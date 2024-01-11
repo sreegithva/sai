@@ -1,0 +1,1029 @@
+.imgGrid {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.imgGrid img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+html,
+body {
+  min-height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Inter", sans-serif !important;
+  color: #000;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+*:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+}
+
+article,
+header,
+footer,
+figure,
+aside,
+nav,
+section,
+summary,
+figcaption,
+details,
+hgroup {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  margin: 0 0 15px;
+}
+
+h2 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+p {
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 2.5rem;
+  margin: 0;
+}
+
+section {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.row {
+  --bs-gutter-x: 2rem;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.mb-30 {
+  margin-bottom: 3rem;
+}
+
+main {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+main header {
+  background: #fff;
+}
+main header .top-grid {
+  min-height: 38px;
+  background: #FF7244;
+  padding-top: 6px;
+}
+main header .top-grid .textWrapper {
+  display: flex;
+  justify-content: flex-end;
+  column-gap: 20px;
+}
+main header .top-grid .textWrapper .textGrid {
+  position: relative;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 27px;
+  width: auto;
+}
+main header .top-grid .textWrapper .textGrid:before {
+  position: absolute;
+  content: "";
+  width: 19.44px;
+  height: 19.44px;
+  padding: 2px;
+  border-radius: 50%;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #fff;
+  z-index: 0;
+}
+main header .top-grid .textWrapper .textGrid img {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  object-fit: contain;
+  z-index: 1;
+  left: 4.5px;
+}
+main header .top-grid .textWrapper .textGrid .phone {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+main header .top-grid .textWrapper p {
+  color: #fff;
+}
+main header nav.navbar {
+  flex-wrap: wrap;
+  padding-block: 1.6rem 2.1rem;
+}
+main header nav.navbar a.navbar-brand {
+  width: 20.9rem;
+  height: auto;
+  margin: 0;
+}
+main header nav.navbar a.navbar-brand img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main header nav.navbar ul.navbar-nav {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  column-gap: 40px;
+  margin-left: auto;
+}
+main header nav.navbar ul.navbar-nav li {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0;
+  transition: all 0.3s ease-in;
+}
+main header nav.navbar ul.navbar-nav li:hover {
+  color: #FF7244;
+}
+main header nav.navbar ul.navbar-nav li .nav-link.active {
+  color: #FF7244 !important;
+}
+main header nav.navbar .donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 6rem;
+  width: 20rem;
+  background: #FF7244;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  background: #B0DE7C;
+  width: 16rem;
+  height: 4.7rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-left: 4.4rem;
+  color: #000;
+  transition: all 0.3s ease-in;
+}
+main header nav.navbar .donate:hover {
+  background: #B0DE7C;
+}
+main header nav.navbar .donate:hover {
+  background: #FF7244;
+  color: #fff;
+}
+main section.bannerSwiper {
+  height: calc(100% - 144px);
+}
+main section.bannerSwiper .swiper-pagination-bullet {
+  width: 1.1rem;
+  height: 1.1rem;
+  background: #fff;
+  opacity: 1;
+}
+main section.bannerSwiper .swiper-pagination-bullet-active {
+  background: #FF7244;
+}
+main section.bannerSwiper .swiper-pagination-vertical.swiper-pagination-bullets, main section.bannerSwiper .swiper-vertical > .swiper-pagination-bullets {
+  right: 40px;
+}
+main section.bannerSwiper .swiper-pagination-vertical.swiper-pagination-bullets .swiper-pagination-bullet, main section.bannerSwiper .swiper-vertical > .swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: var(--swiper-pagination-bullet-vertical-gap, 18px) 0;
+}
+main section.bannerSwiper .swiper-slide {
+  position: relative;
+}
+main section.bannerSwiper .swiper-slide .txtGrid {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+main section.bannerSwiper .swiper-slide .txtGrid h1 {
+  font-size: 7rem;
+  line-height: 7rem;
+  font-weight: 700;
+  color: #fff;
+}
+main section.bannerSwiper .swiper-slide .txtGrid p {
+  font-size: 3.6rem;
+  color: #fff;
+  text-align: center;
+}
+main section.bannerSwiper .swiper-slide .txtGrid .donate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 6rem;
+  width: 20rem;
+  background: #FF7244;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  margin-top: 4rem;
+}
+main section.bannerSwiper .swiper-slide .txtGrid .donate:hover {
+  background: #B0DE7C;
+}
+main section.history {
+  position: relative;
+}
+main section.history .prpleGrid {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55rem;
+  height: 100%;
+  background: rgba(186, 124, 158, 0.12);
+}
+main section.history .prpleGrid .imgGrid {
+  width: 15rem;
+  height: 100%;
+  padding-block: 40px;
+  z-index: 0;
+}
+main section.history .prpleGrid .imgGrid img {
+  object-fit: contain;
+}
+main section.history .contentGrid {
+  display: block;
+  padding-block: 13em;
+}
+main section.history .contentGrid .titleGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 9.4rem;
+}
+main section.history .contentGrid .swiper-slide .imgGrid {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  z-index: 1;
+}
+main section.history .contentGrid .swiper-slide .imgGrid img {
+  object-fit: cover;
+}
+main section.history .contentGrid .swiper-slide .textGrid {
+  width: 50%;
+  height: auto;
+}
+main section.history .contentGrid .swiper-slide .textGrid h2 {
+  font-size: 8rem;
+  font-weight: 600;
+  color: #BA7C9E;
+  margin-left: -84px;
+}
+main section.founder-message {
+  position: relative;
+  background: #FFF4D1;
+  padding-block: 16rem;
+  z-index: 1;
+}
+main section.founder-message h2 {
+  margin-bottom: 1.8rem;
+}
+main section.founder-message p {
+  margin-bottom: 3rem;
+  width: 85%;
+}
+main section.founder-message h6 {
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 500;
+}
+main section.founder-message h6 span {
+  color: #505050;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+main section.founder-message .imgGrid {
+  position: relative;
+  width: 43.8rem;
+  height: 43.8rem;
+  border-radius: 50%;
+  border: solid 2rem #fff;
+  margin-inline: auto;
+  overflow: visible;
+}
+main section.founder-message .imgGrid:before {
+  position: absolute;
+  content: "";
+  background: #fff;
+  width: 4px;
+  height: 12rem;
+  bottom: -32%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+main section.founder-message .imgGrid .quoteImg {
+  position: absolute;
+  top: -8px;
+  left: -45px;
+  width: 11.4rem;
+  height: 11.4rem;
+}
+main section.founder-message .imgGrid .quoteImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+main section.navajeevanam {
+  position: relative;
+  background: transparent;
+  z-index: 9;
+  padding-bottom: 16.4rem;
+  margin-top: -70px;
+  overflow: hidden;
+}
+main section.navajeevanam:after {
+  position: absolute;
+  content: "";
+  bottom: 0;
+  left: 3rem;
+  right: 0;
+  width: 110%;
+  height: 20rem;
+  background: url(../images/horizontal-text.png) center no-repeat;
+  background-size: contain;
+}
+main section.navajeevanam .navajeevanam-subgrid {
+  background: #E4F5FF;
+  padding: 6rem;
+  position: relative;
+  z-index: 99;
+}
+main section.navajeevanam a {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0;
+  transition: all 0.3s ease-in;
+  margin-block: 3rem;
+}
+main section.navajeevanam a:hover {
+  color: #FF7244;
+}
+main section.navajeevanam .txtGrid {
+  padding-left: 3rem;
+}
+main section.navajeevanam .txtGrid p {
+  margin-bottom: 1.8rem;
+}
+main section.navajeevanam .txtGrid ul {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  column-gap: 2rem;
+}
+main section.navajeevanam .txtGrid ul li {
+  background: rgba(255, 255, 255, 0.36);
+  padding: 1.2rem 2rem;
+  min-height: 13.5rem;
+}
+main section.navajeevanam .txtGrid ul li h2 {
+  font-weight: 500;
+  margin-bottom: 0.25rem;
+}
+main section.navajeevanam .txtGrid ul li h2 span {
+  font-size: 3rem;
+  font-weight: 300;
+}
+main section.navajeevanam .txtGrid ul li span {
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+main section.other-projects {
+  background: #F1FFE1;
+  padding-block: 9.4rem;
+}
+main section.other-projects .titleGrid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main section.other-projects h2 {
+  margin-bottom: 4.8rem;
+}
+main section.other-projects a {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0;
+  transition: all 0.3s ease-in;
+}
+main section.other-projects a:hover {
+  color: #FF7244;
+}
+main section.other-projects .proj-grid {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 55rem;
+  padding: 1.7rem 4rem 4rem;
+  z-index: 0;
+}
+main section.other-projects .proj-grid:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 46%, rgba(0, 0, 0, 0.95) 100%);
+  z-index: 1;
+}
+main section.other-projects .proj-grid h3, main section.other-projects .proj-grid p, main section.other-projects .proj-grid a {
+  z-index: 2;
+}
+main section.other-projects .proj-grid h3 {
+  font-weight: 600;
+  color: #fff;
+}
+main section.other-projects .proj-grid p {
+  color: #fff;
+  margin-bottom: 2rem;
+}
+main section.other-projects .proj-grid a {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0;
+  transition: all 0.3s ease-in;
+  color: #fff;
+  text-transform: uppercase;
+}
+main section.other-projects .proj-grid a:hover {
+  color: #FF7244;
+}
+main section.other-projects .proj-grid span.location {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  padding: 0.2rem 2rem;
+  padding-left: 4rem;
+  background: #FFFF6E;
+  color: #000;
+  border-radius: 2rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  z-index: 2;
+}
+main section.other-projects .proj-grid span.location:before {
+  position: absolute;
+  content: "";
+  left: 10px;
+  top: 50%;
+  width: 2.5rem;
+  height: 2.5rem;
+  transform: translateY(-50%);
+  background: url(../images/location.svg) center no-repeat;
+  background-size: contain;
+}
+main section.other-projects .proj-grid-1 {
+  background: url(../images/proj-1.png) center no-repeat;
+  background-size: cover;
+}
+main section.other-projects .proj-grid-2 {
+  background: url(../images/proj-2.png) center no-repeat;
+  background-size: cover;
+}
+main section.other-projects .proj-grid-3 {
+  background: url(../images/proj-3.png) center no-repeat;
+  background-size: cover;
+}
+main section.twoGrid {
+  width: 100%;
+  padding-block: 13rem;
+}
+main section.twoGrid .boxGrid {
+  position: relative;
+  padding: 6rem;
+  min-height: 61.4rem;
+  overflow: hidden;
+}
+main section.twoGrid .boxGrid::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 0;
+}
+main section.twoGrid .boxGrid h2, main section.twoGrid .boxGrid h3, main section.twoGrid .boxGrid p, main section.twoGrid .boxGrid a, main section.twoGrid .boxGrid ul {
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+main section.twoGrid .boxGrid a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 6rem;
+  width: 20rem;
+  background: #FF7244;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  margin-top: 3.2rem;
+}
+main section.twoGrid .boxGrid a:hover {
+  background: #B0DE7C;
+}
+main section.twoGrid .boxGrid p {
+  margin-top: 15px;
+}
+main section.twoGrid .boxGrid h3 {
+  font-weight: 600;
+}
+main section.twoGrid .boxGrid ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+main section.twoGrid .boxGrid ul li {
+  position: relative;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 2.5rem;
+  color: #fff;
+  list-style-type: disc;
+}
+main section.twoGrid .boxGrid ul li::marker {
+  color: #fff;
+  font-size: 1.5em;
+}
+main section.twoGrid .leftGrid {
+  background: url(../images/donate.png) center no-repeat;
+  background-size: cover;
+}
+main section.twoGrid .rightGrid {
+  background: url(../images/joinus.png) center no-repeat;
+  background-size: cover;
+}
+main section.twoGrid .rightGrid a {
+  background: #B0DE7C;
+}
+main section.twoGrid .rightGrid a:hover {
+  background: #FF7244;
+}
+main section.testimonials {
+  display: block;
+  padding-bottom: 13rem;
+}
+main section.testimonials h2 {
+  margin-bottom: 3rem;
+}
+main section.testimonials .video-grid {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 33.5rem;
+  margin-bottom: 3rem;
+}
+main section.testimonials .video-grid video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main section.testimonials .video-grid button {
+  position: absolute;
+  background-color: #666;
+  border: medium none;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 8px 16px;
+  cursor: pointer;
+  z-index: 999;
+}
+main section.testimonials .video-grid button.active {
+  background-color: #0077a2;
+}
+main section.achievements {
+  background: #D9D9D9;
+  padding-block: 9.8rem;
+}
+main section.achievements h2 {
+  font-size: 4rem;
+}
+main section.achievements .link {
+  display: block;
+  color: #000;
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0;
+  transition: all 0.3s ease-in;
+}
+main section.achievements .link:hover {
+  color: #FF7244;
+}
+main section.achievements .view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 6rem;
+  width: 20rem;
+  background: #FF7244;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  font-size: 1.8rem;
+  font-weight: 500;
+  transition: all 0.3s ease-in;
+  width: 23rem;
+  margin-top: 3rem;
+  background: #B0DE7C;
+}
+main section.achievements .view:hover {
+  background: #B0DE7C;
+}
+main section.achievements .awardsLogoGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 120px;
+  padding-bottom: 0.8rem;
+  background: url(../images/award.svg) center no-repeat;
+  background-size: contain;
+  margin-bottom: 2.6rem;
+}
+main section.achievements .awardsLogoGrid span {
+  font-size: 1.4rem;
+  color: #BA7C9E;
+}
+main section.achievements .awardsLogoGrid h6 {
+  font-size: 2rem;
+  color: #BA7C9E;
+  margin-bottom: 0;
+}
+main section.achievements .txtGrid {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 14.5rem;
+}
+main section.achievements .txtGrid p {
+  margin-bottom: 2rem;
+  text-align: center;
+  width: 80%;
+  font-weight: 500;
+}
+main footer {
+  background: #000;
+  padding-block: 10rem 0;
+}
+main footer h6 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #fff;
+  text-transform: uppercase;
+}
+main footer p, main footer a, main footer span {
+  color: #fff;
+}
+main footer ul.quickLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  row-gap: 10px;
+}
+main footer ul.quickLinks li a {
+  font-size: 1.6rem;
+  font-weight: 400;
+}
+main footer ul.quickLinks-1 {
+  margin-top: 4rem;
+}
+main footer ul.bankGrid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  gap: 1rem;
+  width: 35rem;
+  margin-bottom: 5.2rem;
+}
+main footer ul.bankGrid li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  width: 12rem;
+  height: 6.4rem;
+  padding: 1rem;
+  border-radius: 10px;
+}
+main footer ul.bankGrid li a img {
+  object-fit: contain;
+}
+main footer ul.social {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 3rem;
+}
+main footer ul.social li a i {
+  transition: all 0.3s ease-in;
+  font-size: 2rem;
+  color: #fff;
+}
+main footer ul.social li a:hover i {
+  color: #FF7244;
+}
+main footer .getintouch {
+  min-width: 20rem;
+}
+main footer .getintouch span {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-block: 3rem 2rem;
+}
+main footer .getintouch span, main footer .getintouch p {
+  color: #fff;
+  white-space: nowrap;
+}
+main footer .getintouch p span {
+  font-size: 1.3rem;
+  display: inline-block;
+  margin: 0;
+  line-height: 2.5rem;
+  font-weight: 300;
+}
+main footer .address h6 {
+  white-space: nowrap;
+}
+main footer section.achievements .link {
+  font-size: 1.5rem;
+}
+main footer section.achievements .view {
+  height: 6rem;
+  width: 20rem;
+  font-size: 1.8rem;
+}
+main footer .ftr-btm {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 4.3rem;
+  border-top: solid 1px #1E1E1E;
+  margin-top: 6.6rem;
+}
+main footer .ftr-btm a {
+  transition: all 0.3s ease-in;
+}
+main footer .ftr-btm a:hover {
+  color: #FF7244;
+}
+main footer .ftr-btm p {
+  font-weight: 400;
+}
+
+@media (max-width: 1680px) {
+  main h2 {
+    font-size: 4.5rem;
+  }
+  main h3 {
+    font-size: 2.8rem;
+  }
+  main h4 {
+    font-size: 2.25rem;
+  }
+  main p {
+    font-size: 1.5rem;
+    line-height: 2.2rem;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid h1 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid p {
+    font-size: 3.1rem;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid .donate {
+    height: 5rem;
+    width: 18rem;
+    font-size: 1.5rem;
+  }
+  main section.history .gallery-thumbs .swiper-slide {
+    font-size: 1.8rem;
+  }
+  main section.history .contentGrid {
+    padding-inline: 10rem;
+    padding-block: 8em;
+  }
+  main section.history .contentGrid .swiper-slide .imgGrid {
+    height: 85%;
+  }
+  main section.history .contentGrid .swiper-slide .textGrid h2 {
+    font-size: 6rem;
+  }
+  main section.history .prpleGrid {
+    width: 32rem;
+  }
+  main section.history .prpleGrid .imgGrid {
+    width: 12rem;
+  }
+  main section.founder-message {
+    padding-block: 12rem;
+  }
+  main section.navajeevanam {
+    padding-bottom: 12rem;
+  }
+  main section.navajeevanam:after {
+    left: 2rem;
+    height: 17rem;
+  }
+  main section.twoGrid {
+    padding-block: 11rem;
+  }
+  main section.other-projects .proj-grid span.location {
+    font-size: 2.2rem;
+  }
+  main section.achievements {
+    padding-block: 8.8rem;
+  }
+  main section.testimonials {
+    padding-bottom: 11rem;
+  }
+  main footer {
+    padding-block: 9rem 0;
+  }
+  main footer ul.quickLinks li a {
+    font-size: 1.5rem;
+  }
+  main footer .ftr-btm {
+    margin-top: 5.6rem;
+    padding-block: 2.5rem;
+  }
+}
+@media (max-width: 1400px) {
+  main h2 {
+    font-size: 3.5rem !important;
+  }
+  main h3 {
+    font-size: 2.2rem;
+  }
+  main h4 {
+    font-size: 2rem;
+  }
+  main header nav.navbar ul.navbar-nav {
+    column-gap: 24px;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid h1 {
+    font-size: 5rem;
+    line-height: 5rem;
+  }
+  main section.history .contentGrid {
+    padding-inline: 9rem;
+  }
+  main section.history .contentGrid .swiper-slide {
+    gap: 45px;
+  }
+  main section.history .contentGrid .swiper-slide .textGrid h2 {
+    margin-left: -52px;
+    margin-top: 20px;
+  }
+  main section.history .gallery-thumbs {
+    width: 15%;
+  }
+  main section.navajeevanam .navajeevanam-subgrid {
+    padding: 4rem;
+  }
+  main section.navajeevanam .txtGrid {
+    padding-left: 1.5rem;
+  }
+  main section.navajeevanam .txtGrid ul {
+    column-gap: 1rem;
+  }
+  main section.navajeevanam .txtGrid ul li {
+    min-height: 12.5rem;
+  }
+  main section.navajeevanam .txtGrid ul li h2 {
+    font-size: 4rem;
+  }
+  main footer ul.bankGrid {
+    width: 25rem;
+  }
+  main footer ul.bankGrid li a {
+    width: 10rem;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
