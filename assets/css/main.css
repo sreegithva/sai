@@ -336,7 +336,7 @@ main section.history .prpleGrid .imgGrid img {
 }
 main section.history .contentGrid {
   display: block;
-  padding-block: 13em;
+  padding-block: 13em 8rem;
 }
 main section.history .contentGrid .titleGrid {
   display: flex;
@@ -469,6 +469,9 @@ main section.navajeevanam .txtGrid ul {
   column-gap: 2rem;
 }
 main section.navajeevanam .txtGrid ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background: rgba(255, 255, 255, 0.36);
   padding: 1.2rem 2rem;
   min-height: 13.5rem;
@@ -921,6 +924,9 @@ main footer .ftr-btm p {
     width: 18rem;
     font-size: 1.5rem;
   }
+  main section.history {
+    max-height: 80rem;
+  }
   main section.history .gallery-thumbs .swiper-slide {
     font-size: 1.8rem;
   }
@@ -991,7 +997,7 @@ main footer .ftr-btm p {
     line-height: 5rem;
   }
   main section.history .contentGrid {
-    padding-inline: 9rem;
+    padding-inline: 0;
   }
   main section.history .contentGrid .swiper-slide {
     gap: 45px;
@@ -1017,12 +1023,189 @@ main footer .ftr-btm p {
   }
   main section.navajeevanam .txtGrid ul li h2 {
     font-size: 4rem;
+    white-space: nowrap;
   }
   main footer ul.bankGrid {
     width: 25rem;
   }
   main footer ul.bankGrid li a {
     width: 10rem;
+  }
+}
+@media (max-width: 1200px) {
+  main h2 {
+    font-size: 3rem !important;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid h1 {
+    font-size: 4.2rem;
+    line-height: 4.2rem;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid p {
+    font-size: 3rem;
+  }
+  main section.history .prpleGrid {
+    width: 22rem;
+  }
+  main section.history .contentGrid {
+    padding-block: 8rem;
+  }
+  main section.history .contentGrid .titleGrid {
+    margin-bottom: 3.4rem;
+  }
+  main section.achievements .txtGrid {
+    min-height: 15.5rem;
+  }
+  main section.achievements .txtGrid p {
+    margin-bottom: 2rem;
+    text-align: center;
+    width: 100%;
+  }
+  main section.achievements .awardsLogoGrid {
+    height: 108px;
+  }
+  main section.twoGrid .boxGrid {
+    padding: 6rem 3rem;
+    min-height: 53.4rem;
+  }
+  main section.navajeevanam .navajeevanam-subgrid {
+    padding: 4rem;
+  }
+  main section.navajeevanam .txtGrid {
+    padding-left: 0.5rem;
+  }
+  main section.navajeevanam .txtGrid ul li {
+    min-height: 12.5rem;
+  }
+  main section.navajeevanam .txtGrid ul li span {
+    font-size: 1.25rem;
+  }
+  main section.founder-message {
+    padding-block: 6rem 12rem;
+  }
+  main section.navajeevanam:after {
+    height: 12rem;
+  }
+}
+@media (max-width: 991px) {
+  main .mb-30 {
+    margin-bottom: 1rem;
+  }
+  main header nav.navbar .donate {
+    margin-inline: auto;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid {
+    width: 75%;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid h1 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+  main section.bannerSwiper .swiper-slide .txtGrid p {
+    font-size: 2rem;
+  }
+  main section.history {
+    min-height: 880px;
+  }
+  main section.history .contentGrid {
+    padding-block: 5rem;
+  }
+  main section.history .contentGrid .swiper-slide {
+    flex-flow: column;
+    gap: 0;
+  }
+  main section.history .contentGrid .swiper-slide .imgGrid {
+    width: 60%;
+    height: 32%;
+  }
+  main section.history .contentGrid .swiper-slide .textGrid {
+    width: 80%;
+  }
+  main section.history .contentGrid .swiper-slide .textGrid h2 {
+    margin-left: -35px;
+  }
+  main section.navajeevanam {
+    padding-bottom: 6rem;
+  }
+  main section.navajeevanam::after {
+    left: 2rem;
+    height: 6rem;
+  }
+  main section.navajeevanam .txtGrid {
+    margin-top: 20px;
+  }
+  main section.other-projects {
+    padding-block: 5rem;
+  }
+  main section.other-projects h2 {
+    margin-bottom: 2rem;
+  }
+  main section.other-projects .row {
+    row-gap: 2rem;
+  }
+  main section.other-projects .proj-grid {
+    height: 60rem;
+  }
+  main section.other-projects .proj-grid span.location {
+    font-size: 2rem;
+  }
+  main section.other-projects .proj-grid span.location:before {
+    width: 2rem;
+    height: 2rem;
+  }
+  main section.twoGrid {
+    padding-block: 5rem;
+  }
+  main section.twoGrid .row {
+    row-gap: 2rem;
+  }
+  main section.twoGrid .boxGrid {
+    padding: 5rem 3rem;
+    min-height: 48rem;
+  }
+  main section.achievements {
+    padding-block: 5rem;
+  }
+  main section.achievements .achievement-grid {
+    display: block;
+    width: 100%;
+  }
+  main section.achievements .awardsLogoGrid {
+    width: 140px;
+    margin-inline: auto;
+  }
+  main section.achievements .txtGrid {
+    min-height: 13.5rem;
+    margin-bottom: 20px;
+  }
+  main section.testimonials .row {
+    row-gap: 3rem;
+  }
+  main section.testimonials .video-grid {
+    margin-bottom: 2rem;
+  }
+  main footer {
+    padding-block: 6rem 0;
+  }
+  main footer .row {
+    row-gap: 3rem;
+  }
+  main footer h6 {
+    font-size: 1.5rem;
+  }
+  main footer ul.bankGrid {
+    width: 22rem;
+  }
+  main footer ul.bankGrid li a {
+    width: 8rem;
+  }
+  main footer .getintouch span {
+    margin-block: 1rem 1rem;
+  }
+  main footer .ftr-btm {
+    margin-top: 0;
+  }
+  main footer .ftr-btm p {
+    font-size: 1.2rem;
   }
 }
 
