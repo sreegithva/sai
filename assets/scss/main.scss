@@ -254,7 +254,7 @@ main {
                 margin-left: auto;
                 li{
                     @include link;
-                    .nav-link.active{
+                    .nav-link:hover, .nav-link.active{
                         color: $orange !important;
                     }
                 }

@@ -215,7 +215,7 @@ main header nav.navbar ul.navbar-nav li {
 main header nav.navbar ul.navbar-nav li:hover {
   color: #FF7244;
 }
-main header nav.navbar ul.navbar-nav li .nav-link.active {
+main header nav.navbar ul.navbar-nav li .nav-link:hover, main header nav.navbar ul.navbar-nav li .nav-link.active {
   color: #FF7244 !important;
 }
 main header nav.navbar .donate {
