@@ -684,6 +684,9 @@ main section.testimonials {
 main section.testimonials h2 {
   margin-bottom: 3rem;
 }
+main section.testimonials h4 {
+  margin-top: 1.5rem;
+}
 main section.testimonials .video-grid {
   position: relative;
   display: block;
