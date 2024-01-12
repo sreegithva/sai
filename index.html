@@ -523,12 +523,6 @@
         swiper: galleryThumbs
       }
     });
-    galleryTop.on("slideChangeTransitionStart", function () {
-      galleryThumbs.slideTo(galleryTop.activeIndex);
-    });
-    galleryThumbs.on("transitionStart", function () {
-      galleryTop.slideTo(galleryThumbs.activeIndex);
-    });
   });
 
 
