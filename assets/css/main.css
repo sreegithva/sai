@@ -336,7 +336,7 @@ main section.history .prpleGrid .imgGrid img {
 }
 main section.history .contentGrid {
   display: block;
-  padding-block: 13em 8rem;
+  padding-block: 13em;
 }
 main section.history .contentGrid .titleGrid {
   display: flex;
@@ -924,9 +924,6 @@ main footer .ftr-btm p {
     width: 18rem;
     font-size: 1.5rem;
   }
-  main section.history {
-    max-height: 80rem;
-  }
   main section.history .gallery-thumbs .swiper-slide {
     font-size: 1.8rem;
   }
@@ -1103,9 +1100,6 @@ main footer .ftr-btm p {
   main section.bannerSwiper .swiper-slide .txtGrid p {
     font-size: 2rem;
   }
-  main section.history {
-    min-height: 880px;
-  }
   main section.history .contentGrid {
     padding-block: 5rem;
   }
@@ -1115,7 +1109,7 @@ main footer .ftr-btm p {
   }
   main section.history .contentGrid .swiper-slide .imgGrid {
     width: 60%;
-    height: 32%;
+    height: 50%;
   }
   main section.history .contentGrid .swiper-slide .textGrid {
     width: 80%;

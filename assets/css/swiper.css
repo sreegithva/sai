@@ -126,7 +126,7 @@ html, body {
       @media (min-width: 480px) {
         section.history .gallery-thumbs {
           width: 20%;
-          height: 64vh;
+          height: auto;
           padding: 0;
         }
       }
